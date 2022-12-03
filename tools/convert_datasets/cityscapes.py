@@ -96,15 +96,15 @@ def main():
 
     save_class_stats(out_dir, sample_class_stats)
 
-    split_names = ['train', 'val', 'test']
+    # split_names = ['train', 'val', 'test']
 
-    for split in split_names:
-        filenames = []
-        for poly in mmcv.scandir(
-                osp.join(gt_dir, split), '_polygons.json', recursive=True):
-            filenames.append(poly.replace('_gtFine_polygons.json', ''))
-        with open(osp.join(out_dir, f'{split}.txt'), 'w') as f:
-            f.writelines(f + '\n' for f in filenames)
+    # for split in split_names:
+    #     filenames = []
+    #     for poly in mmcv.scandir(
+    #             osp.join(gt_dir, split), '_polygons.json', recursive=True):
+    #         filenames.append(poly.replace('_gtFine_polygons.json', ''))
+    #     with open(osp.join(out_dir, f'{split}.txt'), 'w') as f:
+    #         f.writelines(f + '\n' for f in filenames)
 
 
 if __name__ == '__main__':
