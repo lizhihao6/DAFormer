@@ -3,6 +3,5 @@
 # Licensed under the Apache License, Version 2.0
 # ---------------------------------------------------------------
 
-_base_ = ['upernet_mit.py']
-
-model = dict(decode_head=dict(channels=256, ))
+# learning policy
+lr_config = dict(policy='poly', power=1.0, min_lr=1e-4, by_epoch=False)

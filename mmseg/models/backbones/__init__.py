@@ -7,6 +7,8 @@ from .resnest import ResNeSt
 from .resnet import ResNet, ResNetV1c, ResNetV1d
 from .resnext import ResNeXt
 
+from .hrnet import HRNet
+
 __all__ = [
     'ResNet',
     'ResNetV1c',
@@ -20,4 +22,5 @@ __all__ = [
     'mit_b3',
     'mit_b4',
     'mit_b5',
+    'HRNet'
 ]
